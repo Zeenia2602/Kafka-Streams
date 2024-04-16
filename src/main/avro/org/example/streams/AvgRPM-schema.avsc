@@ -1,0 +1,15 @@
+{
+  "namespace": "org.example.streams",
+  "name": "AvgRPM",
+  "type": "record",
+  "fields": [
+    {
+      "name": "totalRpm",
+      "type": "double"
+    },
+    {
+      "name": "count",
+      "type": "int"
+    }
+  ]
+}

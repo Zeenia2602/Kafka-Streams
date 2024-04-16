@@ -1,0 +1,56 @@
+{
+    "namespace": "org.example.streams",
+    "name": "fleet_mgmt_sensors",
+    "type": "record",
+    "fields": [
+        {
+            "name": "vehicle_id",
+            "type": {
+                "type": "int",
+                "arg.properties": {
+                    "range": {
+                        "min": 1,
+                        "max": 50
+                    }
+                }
+            }
+        },
+        {
+            "name": "engine_temperature",
+            "type": {
+                "type": "int",
+                "arg.properties": {
+                    "range": {
+                        "min": 150,
+                        "max": 250
+                    }
+                }
+            }
+        },
+        {
+            "name": "engine_rotation",
+            "type": {
+                "type": "int",
+                "arg.properties": {
+                    "range": {
+                        "min": 300,
+                        "max": 850
+                    }
+                }
+            }
+        },
+        {
+            "name": "ts",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis",
+                "arg.properties": {
+                    "iteration": {
+                        "start": 1609459200000,
+                        "step": 10000
+                    }
+                }
+            }
+        }
+    ]
+}

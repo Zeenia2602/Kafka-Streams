@@ -1,0 +1,15 @@
+{
+"namespace": "org.example.streams",
+"name": "AvgTemp",
+"type": "record",
+"fields": [
+  {
+    "name": "totalTemp",
+    "type": "double"
+  },
+  {
+    "name": "count",
+    "type": "int"
+  }
+  ]
+}
